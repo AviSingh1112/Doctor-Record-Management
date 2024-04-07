@@ -1,7 +1,7 @@
 # Doctor-Record-Management
 Doctor Record Management using html nodejs css and mysql
 This is very basic Doctor profile and appointment management system created using html nodejs css and mysql workbench.
-How to run:
+Here's how you can run this code:
 1. Place all of the css files in a folder named "assets", place the assets folder along with the rest of the codes in ur project folder
 2. Run the following mysql codes in the workbench to setup the database:(use a newline after each semicolon and comment)
 create database nodejs;

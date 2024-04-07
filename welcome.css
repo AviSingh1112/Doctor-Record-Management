@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #7f379b, #ffa26c);
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 9em; /* Significantly increase the size of the "Welcome" text */
+    margin-bottom: 0.5em;
+}
+
+h2 {
+    font-size: 3em; /* Increase the size of the "Please Select an option" text */
+    margin-bottom: 0.5em;
+}
+
+.btn {
+    display: inline-block; /* Center the buttons in the div */
+    width: auto; /* Auto width based on content */
+    padding: 20px 40px; /* Padding inside buttons */
+    background-color: #7f379b; /* Button background color */
+    color: #fff;
+    font-size: 1.25em; /* Reduce the size of the text inside the buttons */
+    margin: 20px; /* Margin around the buttons */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Add some shadow for depth */
+    text-align: center; /* Ensure text is centered */
+}
+.container {
+    text-align: center; /* Center the buttons horizontally */
+}
+
+
+.btn:hover {
+    background-color: #ff6a85;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        width: 70%; /* Adjust width for larger screens if necessary */
+        padding: 50px; /* More padding for larger buttons */
+        font-size: 4em; /* Increase text size for larger screens */
+    }
+}

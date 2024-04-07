@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #7f379b, #ffa26c);
+    color: #fff;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em; /* Adjust the size to not be overwhelming */
+    margin-bottom: 0.5em;
+}
+
+/* Styling for the buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px; /* Half the padding of the Welcome button for 50% size decrease */
+    margin: 5px; /* Smaller margin */
+    background-color: #7f379b;
+    color: #fff;
+    font-size: 0.875em; /* Smaller font size */
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Smaller shadow */
+    text-align: center;
+    width: 200px; /* Fixed width, adjust as necessary */
+}
+
+.btn:hover {
+    background-color: #ff6a85;
+}
+
+@media (min-width: 768px) {
+    .btn {
+        padding: 15px 30px; /* Slightly larger padding for larger screens */
+        font-size: 1em; /* Larger font size for readability on larger screens */
+        width: 250px; /* Adjust width for larger screens */
+    }
+}

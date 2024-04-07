@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule Appointment</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: flex-end; /* Center the content horizontally */
+            align-items: center; /* Center the content vertically */
+            min-height: 100vh; /* Full height */
+            background-image: url('https://img.freepik.com/free-vector/appointment-booking-with-calendar_52683-39831.jpg'); /* Your Base64 image */
+            background-position: left; /* Center the image */
+            background-repeat: no-repeat; /* Do not repeat the image */
+            background-size: 90%; /* Resize the background image to cover the entire container */
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8); /* Semi-transparent white background */
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%; /* Full width */
+            max-width: 400px; /* Maximum width */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds a shadow to the form */
+            margin: 20px; /* Optional: Adds margin to the form */
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="datetime-local"],
+        button {
+            width: 100%; /* Full width */
+            padding: 10px;
+            margin-bottom: 15px; /* Adds space between the form elements */
+            border: 1px solid #ccc; /* Border color */
+            border-radius: 5px; /* Rounded borders */
+        }
+
+        button[type="submit"] {
+            background-color: #007bff; /* Blue background */
+            color: white; /* White text */
+            border: none;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3; /* Darker blue background on hover */
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="/appointments/cancel" method="post">
+        <h1>Cancel an Appointment</h1>
+        <label for="appointment_id">Appointment ID:</label>
+        <input type="number" id="appointment_id" name="appointment_id" required>
+        <button type="submit">Cancel Appointment</button>
+    </form>
+</body>
+</html>

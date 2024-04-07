@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Appointment</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://img.freepik.com/free-vector/appointment-booking-with-calendar_52683-39831.jpg');
+            background-position: left center;
+            background-repeat: no-repeat;
+            background-size: 90% ;
+            margin: 0;
+            padding: 0;
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 100%;
+            max-width: 400px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="datetime-local"],
+        select,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="/appointments/update" method="post">
+        <h1 style= "color: black;">Update an Appointment</h1>
+        <label for="appointment_id">Appointment ID:</label>
+        <input type="number" id="appointment_id" name="appointment_id" required>
+        <label for="appointment_time">New Appointment Time:</label>
+        <input type="datetime-local" id="appointment_time" name="appointment_time" required>
+        <label for="status">Status:</label>
+        <select id="status" name="status" required>
+            <option value="booked">Booked</option>
+            <option value="completed">Completed</option>
+            <option value="cancelled">Cancelled</option>
+        </select>
+        <button type="submit">Update Appointment</button>
+    </form>
+</body>
+</html>

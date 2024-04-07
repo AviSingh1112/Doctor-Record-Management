@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Create Doctor Profile</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content:flex-end ; /* Move form to the right */
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://i.pinimg.com/550x/ae/37/6e/ae376e1f53c8603519b9b90945bbfa65.jpg');
+            background-position: left center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            background-size: 70%;
+        }
+
+        .container {
+            width: 80%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-align: end;
+            margin-bottom: 20px;
+            color: #fff; /* Text color */
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        textarea,
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="/doctor/create" method="post">
+        <h1 style="color: black;">Create Doctor Profile</h1>
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="date" name="date_of_birth" placeholder="Date of Birth" required>
+        <input type="text" name="contact_info" placeholder="Contact Information" required>
+        <textarea name="qualifications" placeholder="Qualifications" required></textarea>
+        <textarea name="specializations" placeholder="Specializations" required></textarea>
+        <input type="text" name="license_number" placeholder="License Number" required>
+        <input type="number" name="years_of_experience" placeholder="Years of Experience" required>
+        <button type="submit">Create Profile</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View Doctor Profile</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            display: flex;
+            justify-content: flex-end; /* Move form to the right */
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://i.pinimg.com/736x/0f/c0/10/0fc010dda80ae3698e4e6f584b171cf7.jpg');
+            background-position: left center;
+            background-repeat: no-repeat;
+            margin: 0;
+            padding: 0;
+            background-size: 75%;
+        }
+
+        h1 {
+            text-align: end;
+            margin-bottom: 20px;
+            color: #fff; /* Text color */
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 400px;
+        }
+
+        input[type="text"],
+        input[type="date"],
+        input[type="number"],
+        textarea,
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="/doctor/view" method="get">
+        <h1 style="color: black;">View Doctor Profile</h1>
+        <input type="text" name="doctor_id" placeholder="Doctor ID" required>
+        <button type="submit">View Profile</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Profile Management</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-image: url('https://www.example.com/your-background-image.jpg'); /* Replace with your background image URL */
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            text-align: center;
+            background: linear-gradient(-45deg, #3878aa, #a036c4)
+
+        }
+
+        h1 {
+            font-size: 4em; /* Reduced font size */
+            margin-bottom: 0.5em;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            width: auto;
+            padding: 10px 20px; /* Reduced button padding */
+            background-color: #7f379b;
+            color: #fff;
+            font-size: 1em; /* Reduced font size */
+            margin: 10px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: #ff6a85;
+        }
+
+        @media (min-width: 768px) {
+            .container {
+                flex-direction: row;
+                margin-top: 40px;
+            }
+
+            .btn {
+                margin: 10px;
+                font-size: 1.5em; /* Increase font size for larger screens */
+                padding: 15px 30px; /* Increase button padding for larger screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Doctor Profile Management</h1>
+
+    <div class="container">
+        <a href="/doctor/create-form" class="btn">Create Doctor Profile</a>
+        <a href="/doctor/view-form" class="btn">View Doctor Profile</a>
+        <a href="/doctor/update-form" class="btn">Update Doctor Profile</a>
+        <a href="/doctor/delete-form" class="btn">Delete Doctor Profile</a>
+    </div>
+</body>
+</html>
